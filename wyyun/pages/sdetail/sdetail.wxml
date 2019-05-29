@@ -1,0 +1,55 @@
+<!--pages/sdetail/sdetail.wxml-->
+<view class='wrap'>
+    <view class='top'>
+        <view class='tone'>
+              <image src="{{hlist.icon}}" class='icon'></image>
+              <view class='onecenter'>
+                  <text>{{hlist.tnam}}</text>
+                  <text>更多好音乐</text>
+              </view>
+           <view class='oneright'>立即收听</view>
+        </view>
+        <view class='img'>
+          <image src="{{hlist.picUrl}}"></image>
+        </view>
+        <view class='induce'>
+            <view>{{hlist.title}}</view>
+            <view>
+                <image src="{{hlist.icon}}" class='gim'></image><text>{{hlist.desc}}</text>
+            </view>
+            <view>{{hlist.ftim}}</view>
+        </view>
+
+    </view>
+    <view class='section'>
+      <view class='zj'>专辑</view>
+      <view class='smains'>
+         <view class='ml'>1</view>
+         <view class='mm'>
+             <text>{{hlist.title}}</text>
+             <text>{{hlist.desc}}</text>
+         </view>
+         <view class='mr'>
+               <icon type="download" size="15" color='#b3b3b3'/>
+         </view>
+      </view>
+      <view class='jsh'>专辑简介</view>
+      <view class='conts'>
+         {{hlist.content}}
+      </view>
+       <view class='singth'>
+          <view class='jsh'>歌手其它专辑</view>
+          <view class='singcont'>
+              <block wx:for="{{hlist.children}}" wx:key="index">
+                <view class='msin'>
+                   <view>
+                      <image src="{{item.url}}" class='igm'></image>
+                   </view>
+                   <view >{{item.name}}</view>
+                   <view>{{item.ntime}}</view>
+                </view>
+              </block>
+          </view>
+      </view>
+    </view>
+</view>

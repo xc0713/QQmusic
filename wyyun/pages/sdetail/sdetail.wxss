@@ -1,0 +1,159 @@
+/* pages/sdetail/sdetail.wxss */
+page,.wrap{
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+}
+.top{
+  width: 100%;
+}
+.tone{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  font-size: 12px;
+  position: relative;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 8px;
+}
+.oneright{
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  padding: 3px 10px;
+  border:solid 1px #b3b3b3;
+  color: #666;
+  border-radius: 12px;
+}
+.onecenter{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  line-height: 22px;
+}
+.onecenter text:first-child{
+  font-size: 14px;
+}
+.onecenter text:last-child{
+  font-size: 12px;
+  color: #121212;
+}
+.img{
+  width: 100%;
+  height: 160px;
+  margin-top: 20px;
+  text-align: center;
+}
+.img image{
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+}
+.gim{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: -5px 5px;
+}
+.induce{
+  width: 100%;
+  height: 100px;
+  font-size: 14px;
+  color: #121212;
+  text-align: center;
+}
+.induce view{
+  line-height: 30px;
+}
+.induce view:last-child{
+  font-size: 12px;
+  color: grey;
+}
+.zj{
+  font-size: 12px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 10px;
+   color: grey;
+}
+.smains{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.ml{
+  width: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 12px;
+  color:grey; 
+}
+.mm{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height:20px;
+}
+.mm text:first-child{
+  margin-left: 2px;
+}
+.mm text:last-child{
+  color: grey;
+  transform: scale(0.9);
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mr{
+  width: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+.jsh{
+  font-size: 14px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  margin-left: 5px;
+  overflow: hidden;
+}
+.conts{
+  width: 94%;
+  padding: 0 10px 10px;
+  font-size: 12px;
+  line-height: 20px;
+  color: grey;
+}
+.singth{
+  width: 100%;
+  height: 230px;
+  margin-top: 20px;
+}
+.singcont{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  font-size: 12px;
+}
+.igm{
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+}
+.msin{
+  width: 33%;
+  height: 170px;
+  text-align: center;
+}
+.msin view{
+  line-height: 20px;
+ color: rgba(0,0,0,.4);
+}

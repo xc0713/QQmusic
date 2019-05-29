@@ -1,0 +1,90 @@
+/* pages/songs/index.wxss */
+page,.wrap{
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+.top{
+  width: 100%;
+  height: 240px;
+}
+.img {
+  width: 100%;
+  height: 140px;
+  padding-top: 40px;
+  text-align: center;
+}
+.img image{
+  width: 140px;
+  height: 140px;
+  border-radius: 13px;
+  text-align: center;
+}
+.tit{
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 14px;
+  margin-top: 7px;
+}
+.section{
+  width: 100%;
+  height: 100%;
+}
+.ranking{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: rgba(0,0,0,.4);
+  margin-left: 5px;
+  overflow: hidden;
+}
+.slist{
+  width: 100%;
+  height: 50px;
+  margin:10px 0;
+  font-size: 12px;
+  display: flex;
+}
+.lleft{
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 22px;
+}
+.lright{
+  width: 30px;
+  line-height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.lmain{
+  flex: 1;
+  padding: 0 10px;
+  box-sizing: border-box;
+  line-height: 22px;
+
+}
+.sl{
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,0,.4);
+  font-size: 12px;
+  transform: scale(0.9);
+}
+.bfb{
+   transform: scale(0.9);
+   color: rgba(0,0,0,.4);
+}
+
+.lleft text:first-child{
+  color: grey;
+}
+.lleft text.active{
+  color: #f56273;
+}

@@ -1,0 +1,11 @@
+<!--pages/search/search.wxml-->
+<view class='bank'>
+  <swiper class='swipers' indicator-dots='true' autoplay='true'>
+    <swiper-item wx:for="{{sliderList}}">
+      <image src='{{item.picUrl}}' mode='widthFix'></image>
+    </swiper-item>
+  </swiper>
+   <view class='sect'>
+    <view class='tit'>电台</view>
+   </view>
+</view>

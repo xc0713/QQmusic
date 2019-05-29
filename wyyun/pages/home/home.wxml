@@ -1,0 +1,58 @@
+<!--pages/home/home.wxml-->
+<view class='wrap'>
+  <view class="top">
+      <text class='{{current==0?"active":" "}}' bindtap='changeNav' data-ind="0">推荐</text>
+      <text bindtap='changeNav' data-ind="1" class='{{current==1?"active":" "}}'>排行榜</text>
+      <text bindtap='changeNav' data-ind="2" class='{{current==2?"active":" "}}'>搜索</text>
+  </view>
+  <view class='section'>
+      <view class="cont" wx:if="{{current==0}}">
+        <swiper class='swiper' indicator-dots='true' autoplay='true'>
+        <swiper-item wx:for="{{sliderList}}" wx:key="index">
+          <image src='{{item.picUrl}}' mode='widthFix' bindtap='todetails' data-url="{{index}}"></image>
+        </swiper-item>
+      </swiper>      
+        <view class='t'>
+          <view class="dd">电台</view>
+            <view class="tcont">
+                <blcok wx:for="{{radioList}}" wx:key="index">
+                    <view>
+                       <image src="{{item.picUrl}}"></image>
+                      <text>{{item.Ftitle}}</text>
+                    </view>
+                </blcok>
+            </view>
+        </view>
+      </view>
+      <view class='cont1' wx:if="{{current==1}}">
+          <view class='cmain'>
+            <block wx:for="{{topList}}" wx:key="index">
+                <view class='songs' bindtap='tolist' data-img="{{item.picUrl}}" data-tit="{{item.topTitle}}">
+                  <image src="{{item.picUrl}}" class='img' ></image>
+                    <view class='mcont'>
+                        <view class='mtit'>{{item.topTitle}}</view>
+                        <view > 
+                            <block wx:for="{{item.songList}}" wx:key="index">
+                               <text class='things'>{{index+1}}. {{item.songname}} {{item.singername}}</text>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </block>
+          </view>
+      </view>
+      <view class='cont2' wx:if="{{current==2}}">
+          <view class='toc'>
+            <input placeholder="搜索歌曲、歌单、专辑" class='inpt'/>
+          </view>
+          <view class='hotS'>
+            <view class='hotTit'>热门搜索</view>
+            <view class='nohot'>
+                <block wx:for="{{hot}}" wx:key="index">
+                    <text>{{item.k}}</text>
+                </block>
+            </view>
+          </view>
+      </view>
+  </view>
+</view>

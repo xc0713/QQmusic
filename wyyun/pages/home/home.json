@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Bank": "/components/Bank/bank",
+    "Tolist": "/components/Tolist/Tolist",
+    "Search": "/components/Search/search"
+  }
+}

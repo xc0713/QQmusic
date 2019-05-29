@@ -1,0 +1,30 @@
+<!--pages/songs/index.wxml-->
+<view class='wrap'>
+    <view class="top">
+        <view class='img'><image src="{{img}}"></image></view>
+        <view class='tit'>
+            {{tit}}
+        </view>
+    </view>
+    <view class='section'>
+        <view class='ranking'>排行榜    共100百首</view>
+        <view class='sSongs'>
+            <block wx:for="{{populr}}" wx:key="index">
+                <view class='slist'>
+                    <view class='lleft'>
+                      <text class='{{item.rank<=3?"active":" "}}'>{{item.rank}}</text>
+                      <text class='bfb'>{{item.rankValue}}</text>
+                    </view>
+                    <view class='lmain'>
+                         <view>{{item.title}}</view>
+                        <view class='sl'>{{item.singerName}}</view>
+                    </view>
+                    <view class='lright'>
+                       <icon type="download" size="15" color="#b3b3b3"/>
+                    </view>
+                </view>
+                
+            </block>
+        </view>
+    </view>
+</view>
